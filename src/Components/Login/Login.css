@@ -1,4 +1,4 @@
-.registerpage{
+.loginpage{
     width: 100%;
     height: 1117px;
     background-color: #fff;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.registerpage .register-container{
+.loginpage .login-container{
     width: 450px;
     height: 604px;
     border: 1px solid rgba(0, 0, 0, 0.06);
@@ -23,7 +23,7 @@
     height: 74px;
 }
 
-.register-heading{
+.login-heading{
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -31,14 +31,14 @@
     margin-top: 30px;
 }
 
-.register-text{
+.login-text{
     font-size: 14px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     margin: 0px;
 }
 
-.register-form{
+.login-form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@
     margin-top: 24px;
 }
 
-.register-form input{
+.login-form input{
     width: 391px;
     height: 51px;
     margin-bottom: 24px;
@@ -56,7 +56,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-.register-form button{
+.login-form button{
     background-color: #000;
     width: 391px;
     color: #fff;
@@ -67,14 +67,14 @@
     border-radius: 8px;
 }
 
-.registerpage .alternative-text{
+.loginpage .alternative-text{
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     font-family: 'Work Sans', sans-serif;
-    margin-top: 42px;
+    margin-top: 34px;
 }
 
-.registerpage .alternative-text span{
+.loginpage .alternative-text span{
     color: rgba(185, 28, 28, 1);
 }

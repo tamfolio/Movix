@@ -1,0 +1,91 @@
+.Movie-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 98px;
+    width: 100%;
+}
+
+.Movie-container .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Movie-container .top h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.Movie-container .top p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #BE123C;
+}
+
+.Movie-details{
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    margin-top: 50px;
+    gap: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    height: 500px;
+}
+
+.Movie-details .movie-box{
+    width: 250px;
+    height: 490px;
+    background-color: #fff;
+}
+
+.movie-box .movie-desc .release-date{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    color: #9CA3AF;
+    margin-top: 12px;
+}
+
+.movie-box .movie-desc .movie-title{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.movie-box .movie-desc .movie-ratings{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 14px;
+}
+
+.movie-box .movie-desc .movie-ratings .imdb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.movie-box .movie-desc .movie-ratings .imdb p{
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+.movie-box .movie-desc .movie-category{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    color: #9CA3AF;
+}

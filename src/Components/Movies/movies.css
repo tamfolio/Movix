@@ -42,6 +42,10 @@
     height: 500px;
 }
 
+.Movie-details::-webkit-scrollbar{
+    display: none;
+}
+
 .Movie-details .movie-box{
     width: 250px;
     height: 490px;

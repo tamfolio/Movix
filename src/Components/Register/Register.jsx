@@ -18,6 +18,7 @@ function Register() {
           <input type="password" placeholder="Password" />
           <button>REGISTER</button>
         </div>
+        <p className="alternative-text">Already have an account? <span>Login</span></p>
       </div>
     </div>
   );

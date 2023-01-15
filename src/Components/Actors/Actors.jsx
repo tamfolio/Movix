@@ -6,7 +6,7 @@ function Actors({heading, img,name}) {
     <div className='Actors'>
       <div className="top">
         <h1>{heading}</h1>
-        <p>See all &gt;</p>
+        <p>See more &gt;</p>
       </div>
       <div className="Actor-Container">
         <div className="Actor-card">

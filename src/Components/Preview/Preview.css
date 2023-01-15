@@ -1,0 +1,54 @@
+.Preview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 98px;
+    width: 100%;
+}
+
+.Preview .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Preview .top h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.Preview .top p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    color: #BE123C;
+}
+.preview-container{
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    grid-auto-columns: 36%;
+    margin-top: 50px;
+    gap: 100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    height: 500px;
+}
+
+.preview-card{
+    width: 450px;
+    height: 253px;
+}
+
+.preview-card p{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 12px;
+}

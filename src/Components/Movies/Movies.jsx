@@ -6,7 +6,7 @@ function Movies({heading, img,releaseDate, title}) {
     <div className='Movie-container'>
       <div className="top">
         <h1>{heading}</h1>
-        <p>See all &gt;</p>
+        <p>See more &gt;</p>
       </div>
       <div className="Movie-details">
         <div className="movie-box">

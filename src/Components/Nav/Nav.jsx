@@ -21,7 +21,7 @@ function Nav() {
             <input type="text" placeholder='what do you want to watch?' />
         </div>
         <div className="nav-text">
-            <h1>Hi,Tamilore</h1>
+            <h1>Hi, Tamilore</h1>
             <img src="/assets/Menu.svg" alt="" />
         </div>
     </div>

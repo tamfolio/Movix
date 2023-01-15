@@ -3,3 +3,60 @@
     object-fit: contain;
     height: 600px;
 }
+
+.banner-contents {
+    margin-left: 30px;
+    padding-top: 140px;
+    padding-left: 98px;
+    height: 190px;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    max-width: 404px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.banner_description {
+    max-width: 302px;
+    line-height: 18px;
+    font-size: 14px;
+    height: 80px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    margin-top: 18px;
+}
+
+.banner-button {
+    width: 169px;
+    height: 39px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background-color: #BE123C;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+
+.banner-ratings{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 34px;
+}
+
+.banner-ratings .imdb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.banner-ratings .imdb p{
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}

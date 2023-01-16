@@ -33,11 +33,11 @@ function Movies({heading, img,releaseDate, title, fetchUrl}) {
                 <div className="movie-ratings">
                 <div className="imdb">
                     <img src="/assets/imdb.svg" alt="" />
-                    <p>86.0 / 100</p>
+                    <p>{movie.vote_average} / 10</p>
                 </div>
                 <div className="imdb">
                     <img src="/assets/apple.svg" alt="" />
-                    <p>97%</p>
+                    <p>{movie.vote_count}</p>
                 </div>
                 </div>
                 <h4 className="movie-category">Action, Adventure, Horror</h4>

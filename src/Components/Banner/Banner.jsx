@@ -1,30 +1,52 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import './Banner.css'
+import requests from '../../request';
+import axios from 'axios'
 
 function Banner() {
+    const [movie,setMovie]= useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+            const request = await axios.get(requests.fetchNowPlaying)
+            setMovie(
+                request.data.results[
+                    Math.floor(Math.random() * request.data.results.length - 1)
+                ]
+                );
+                return request;
+        }
+        fetchData();
+    },[])
+
+    console.log(movie)
+
+    function truncate(str,n) {
+        return str?.length > n ? str.substr(0,n-1) + "..." : str;
+    }
   return (
     <header className='banner' 
         style={{
             backgroundSize: 'cover',
-            backgroundImage: `url('/assets/Poster.png')`,
+            backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
             backgroundPosition: "center center"
         }}
     > 
     <div className="banner-contents">
-            <h1 className='banner-title'>John Wick 3 : Parabellum</h1>
+            <h1 className='banner-title'>{movie.title}</h1>
             <div className="banner-ratings">
                 <div className="imdb">
                     <img src="/assets/imdb.svg" alt="" />
-                    <p>86.0 / 100</p>
+                    <p>{movie.vote_average} / 10</p>
                 </div>
                 <div className="imdb">
                     <img src="/assets/apple.svg" alt="" />
-                    <p>97%</p>
+                    <p>{movie.vote_average}</p>
                 </div>
             </div>
             <h1 className="banner_description">
-            John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
+                {truncate(movie?.overview, 150)}
             </h1>
             <button className="banner-button"><FontAwesomeIcon icon="fa-solid fa-play" />Watch Trailer</button>
         </div>

@@ -52,6 +52,11 @@
     background-color: #fff;
 }
 
+.movie-box-img{
+    width: 250px;
+    height: 370px;
+}
+
 .movie-box .movie-desc .release-date{
     font-size: 12px;
     font-weight: 700;

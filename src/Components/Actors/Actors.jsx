@@ -1,7 +1,7 @@
 import React from 'react'
 import './Actors.css'
 
-function Actors({heading, img,name}) {
+function Actors({heading, img,name, fetchUrl}) {
   return (
     <div className='Actors'>
       <div className="top">

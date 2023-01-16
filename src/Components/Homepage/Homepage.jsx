@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
+import { auth } from '../../firebase'
 import './Homepage.css'
 import Nav from '../Nav/Nav'
 import Banner from '../Banner/Banner'

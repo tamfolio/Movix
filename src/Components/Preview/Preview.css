@@ -40,6 +40,9 @@
     scrollbar-width: none; 
     height: 500px;
 }
+.preview-container::-webkit-scrollbar{
+    display: none;
+}
 
 .preview-card{
     width: 450px;

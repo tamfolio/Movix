@@ -39,7 +39,7 @@ function Banner() {
             <div className="banner-ratings">
                 <div className="imdb">
                     <img src="/assets/imdb.svg" alt="" />
-                    <p>{movie.vote_average *10} / 100</p>
+                    <p>{(movie.vote_average *10).toFixed(2)} / 100</p>
                 </div>
                 <div className="imdb">
                     <img src="/assets/apple.svg" alt="" />

@@ -44,3 +44,9 @@
 .searchbar > input::placeholder{
     color: #fff;
 }
+
+.logout{
+    color: #fff;
+    background-color: #BE123C;
+    padding: 10px 20px;
+}

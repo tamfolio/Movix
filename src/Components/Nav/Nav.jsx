@@ -4,18 +4,16 @@ import './Nav.css'
 function Nav() {
     const[show, setShow] = useState(false);
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll',() => {
-    //         if(window.scrollY > 100){
-    //             setShow(true);
-    //         } else setShow(false);
-    //     });
-    //     return () => {
-    //         window.removeEventListener('scroll');
-    //     }
-    // },[])
+    useEffect(() => {
+        window.addEventListener('scroll',() => {
+            if(window.scrollY > 100){
+                setShow(true);
+            } 
+            else setShow(false);
+        });
+    },[])
   return (
-    <div className="nav">
+    <div className={`nav ${show && 'nav-black'}`}>
         <img src="/assets/Logo.svg" alt="" />
         <div className="searchbar">
             <input type="text" placeholder='what do you want to watch?' />

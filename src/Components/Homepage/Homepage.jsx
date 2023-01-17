@@ -16,7 +16,7 @@ function Homepage() {
       <Banner/>
       <Movies heading='Featured Movies' img="/assets/movie.png" releaseDate='USA, 2016 - Current' title='Stranger Things' fetchUrl={requests.featuredMovies}/>
       <Movies heading='New Arrival' img="/assets/movie2.png" releaseDate='USA, 2021' title='Dune' fetchUrl={requests.fetchNowPlaying}/>
-      <Preview heading='Exclusive Videos' img='/assets/preview.png' name='Lamb (2021) Trailer'/>
+      <Preview heading='Exclusive Videos' img='/assets/preview.png' name='Lamb (2021) Trailer' fetchUrl={requests.featuredMovies}/>
       <Actors heading='Featured Casts' img='/assets/actor.png' name='Keanu Reeves' fetchUrl={requests.featuredActors}/>
       <Footer/>
     </div>

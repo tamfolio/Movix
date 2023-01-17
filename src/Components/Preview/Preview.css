@@ -38,6 +38,7 @@
     overscroll-behavior-inline: contain;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
+    height: 300px;
 }
 .preview-container::-webkit-scrollbar{
     display: none;
@@ -46,6 +47,15 @@
 .preview-card{
     width: 450px;
     height: 253px;
+    position: relative;
+}
+
+.trailer-icon{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 80px;
+    color: #fff;
 }
 
 .preview-card p{
@@ -53,4 +63,9 @@
     font-weight: 700;
     font-family: 'DM Sans', sans-serif;
     margin-top: 12px;
+}
+
+.trailer-img{
+    width: 450px;
+    height: 253px;
 }

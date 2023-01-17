@@ -49,7 +49,7 @@ function Banner() {
             <h1 className="banner_description">
                 {truncate(movie?.overview, 150)}
             </h1>
-            <button className="banner-button"><FaPlayCircle/>Watch Trailer</button>
+            <button className="banner-button"><FaPlayCircle/>WATCH TRAILER</button>
         </div>
     </header>
   )

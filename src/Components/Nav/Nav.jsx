@@ -38,7 +38,7 @@ function Nav() {
         <div className="nav-text">
             {currentUser ? <h1>Hi, {currentUser.charAt(0).toUpperCase() + currentUser.slice(1)}</h1>: <h1>Hi, User</h1>}
             <img src="/assets/Menu.svg" alt="" onClick={handleLogout}/>
-            <button onClick={handleLogout}>Logout</button>
+            <button onClick={handleLogout} className='logout'>Logout</button>
         </div>
     </div>
   )

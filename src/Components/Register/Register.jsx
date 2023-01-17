@@ -3,7 +3,7 @@ import "./Register.css";
 import { getAuth,createUserWithEmailAndPassword ,updateProfile } from "firebase/auth";
 
 import {auth} from '../../firebase'
-import {useDispatch} from 'react-redux'
+import {useDispatch,useSelector} from 'react-redux'
 import { RegisterSucess } from "../../redux/authSlice";
 import {Link} from 'react-router-dom'
 
@@ -12,6 +12,7 @@ function Register() {
   const [password, setPassword] = useState("");
   const [displayName,setDisplayName] = useState("");
   const dispatch = useDispatch();
+  const {error} = useSelector((state) => state.user)
 
   const updateUserProfile = (displayName, userCredential) => {
     const auth = getAuth();
@@ -33,6 +34,7 @@ function Register() {
         console.log(userCredential)
     }).catch((error) => {
       console.log(error)
+      useDispatch(error);
     })
   }
   return (
@@ -49,6 +51,7 @@ function Register() {
           <input type="text" placeholder="Full Name"  value={displayName} onChange={(e) => setDisplayName(e.target.value)}/>
           <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
           <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+          {error && <p>err</p>}
           <button type="submit" onClick={handleSubmit}>REGISTER</button>
         </div>
         <p className="alternative-text">Already have an account? <Link to='/login'><span>Login</span></Link></p>

@@ -78,3 +78,7 @@
 .registerpage .alternative-text span{
     color: rgba(185, 28, 28, 1);
 }
+
+.registerpage .alternative-text a{
+    text-decoration: none;
+}

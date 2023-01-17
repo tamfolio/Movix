@@ -15,8 +15,6 @@ function Movies({heading, img,releaseDate, title, fetchUrl}) {
         }
         fetchData();
     },[fetchUrl]);
-
-    console.log(movies);
   return (
     <div className='Movie-container'>
       <div className="top">
@@ -25,7 +23,7 @@ function Movies({heading, img,releaseDate, title, fetchUrl}) {
       </div>
       <div className="Movie-details">
         {movies.map((movie) => (
-            <div className="movie-box">
+            <div className="movie-box" key={movie.id}>
             <img src={`${base_url}${movie.poster_path}`} alt="" className='movie-box-img'/>
             <div className="movie-desc">
                 <h3 className="release-date">{new Date(movie.release_date).getFullYear() || new Date(movie.first_air_date).getFullYear()}</h3>

@@ -16,8 +16,6 @@ function Preview({heading,img,name, fetchUrl}) {
         }
         fetchData();
     },[fetchUrl]);
-
-    console.log(movies);
   return (
     <div className='Preview'>
       <div className="top">
@@ -26,7 +24,7 @@ function Preview({heading,img,name, fetchUrl}) {
       </div>
       <div className="preview-container">
         {movies.map((movie) => (
-            <div className="preview-card">
+            <div className="preview-card" key={movie.id}>
             <img src={`${base_url}${movie.backdrop_path}`} className='trailer-img' />
                 <p className="name">{movie.title || movie.name} Trailer</p>
                 <AiOutlinePlayCircle className='trailer-icon'/>

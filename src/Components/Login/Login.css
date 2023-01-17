@@ -78,3 +78,7 @@
 .loginpage .alternative-text span{
     color: rgba(185, 28, 28, 1);
 }
+
+.loginpage .alternative-text a{
+    text-decoration: none;
+}

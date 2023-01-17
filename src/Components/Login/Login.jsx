@@ -3,16 +3,21 @@ import "./Login.css";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 import {auth} from '../../firebase'
+import {Link} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
+import { LoginSucess } from "../../redux/loginSlice";
+import { RegisterSucess } from "../../redux/authSlice";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth,email,password)
     .then((userCredential) => {
-      console.log(userCredential)
+      dispatch(RegisterSucess(userCredential.user))
     }).catch((error) => {
       console.log(error)
     })
@@ -31,7 +36,7 @@ function Login() {
           <button type="submit" onClick={handleSubmit}>LOGIN</button>
         </div>
         <p className="alternative-text">
-          Don’t have an account? <span>Register</span>
+          Don’t have an account? <Link to='/'><span>Register</span></Link>
         </p>
       </div>
     </div>

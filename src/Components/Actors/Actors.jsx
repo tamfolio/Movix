@@ -15,8 +15,6 @@ function Actors({heading, img,name, fetchUrl}) {
         }
         fetchData();
     },[fetchUrl]);
-
-    console.log(actors);
   return (
     <div className='Actors'>
       <div className="top">
@@ -25,7 +23,7 @@ function Actors({heading, img,name, fetchUrl}) {
       </div>
       <div className="Actor-Container">
         {actors.map((actor) => (
-          <div className="Actor-card">
+          <div className="Actor-card" key={actor.id}>
           <img src={`${base_url}${actor.profile_path}`} alt="" className='movie-box-img'/>
           <p className="name">{actor.name}</p>
       </div>

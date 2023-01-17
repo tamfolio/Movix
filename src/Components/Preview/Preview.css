@@ -38,7 +38,6 @@
     overscroll-behavior-inline: contain;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none; 
-    height: 500px;
 }
 .preview-container::-webkit-scrollbar{
     display: none;

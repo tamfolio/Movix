@@ -1,0 +1,43 @@
+.footer{
+    width: 100%;
+    padding: 30px 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 35px;
+}
+
+.footer .social-icons .social-icon{
+    font-size: 24px;
+    color: #111827;
+}
+
+.footer .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 35px;
+}
+
+.footer .links p{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    color: #111827;
+}
+
+.footer .copyright{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    color: #6B7280;
+}

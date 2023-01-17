@@ -7,6 +7,7 @@ import Movies from '../Movies/Movies'
 import Actors from '../Actors/Actors'
 import Preview from '../Preview/Preview'
 import requests from '../../request'
+import Footer from '../Footer/Footer'
 
 function Homepage() {
   return (
@@ -17,6 +18,7 @@ function Homepage() {
       <Movies heading='New Arrival' img="/assets/movie2.png" releaseDate='USA, 2021' title='Dune' fetchUrl={requests.fetchNowPlaying}/>
       <Preview heading='Exclusive Videos' img='/assets/preview.png' name='Lamb (2021) Trailer'/>
       <Actors heading='Featured Casts' img='/assets/actor.png' name='Keanu Reeves' fetchUrl={requests.featuredActors}/>
+      <Footer/>
     </div>
   )
 }

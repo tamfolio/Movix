@@ -3,6 +3,7 @@ import React,{useState, useEffect} from 'react'
 import './Banner.css'
 import requests from '../../request';
 import axios from 'axios'
+import {FaPlayCircle} from 'react-icons/fa'
 
 function Banner() {
     const [movie,setMovie]= useState([]);
@@ -38,7 +39,7 @@ function Banner() {
             <div className="banner-ratings">
                 <div className="imdb">
                     <img src="/assets/imdb.svg" alt="" />
-                    <p>{movie.vote_average} / 10</p>
+                    <p>{movie.vote_average *10} / 100</p>
                 </div>
                 <div className="imdb">
                     <img src="/assets/apple.svg" alt="" />
@@ -48,7 +49,7 @@ function Banner() {
             <h1 className="banner_description">
                 {truncate(movie?.overview, 150)}
             </h1>
-            <button className="banner-button"><FontAwesomeIcon icon="fa-solid fa-play" />Watch Trailer</button>
+            <button className="banner-button"><FaPlayCircle/>Watch Trailer</button>
         </div>
     </header>
   )
